@@ -295,7 +295,7 @@ options:
             - This is only used with 'bridge-slave' - 'hairpin mode' for the slave, which allows frames to be sent back out through the slave the
               frame was received on.
         type: bool
-        default: yes
+        default: no
     runner:
         description:
             - This is the type of device or network connection that you wish to create for a team.
@@ -1983,7 +1983,7 @@ def main():
             hellotime=dict(type='int', default=2),
             maxage=dict(type='int', default=20),
             ageingtime=dict(type='int', default=300),
-            hairpin=dict(type='bool', default=True),
+            hairpin=dict(type='bool', default=False),
             path_cost=dict(type='int', default=100),
             # team specific vars
             runner=dict(type='str', default='roundrobin',
