@@ -473,7 +473,7 @@ connection.autoconnect:                 yes
 connection.slave-type:                  bridge
 ipv4.never-default:                     no
 bridge-port.path-cost:                  100
-bridge-port.hairpin-mode:               no
+bridge-port.hairpin-mode:               yes
 bridge-port.priority:                   32
 """
 
